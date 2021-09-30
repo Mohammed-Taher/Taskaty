@@ -4,7 +4,6 @@ A simple command line interface app for task management.
 
 ## Installation
 
-
 * Clone this repository then run:
 
 * Create a virtual environment:
@@ -15,16 +14,18 @@ python -m venv venv
 
 * Ativate the virtual environment:
 
-On Windows:
+- On Windows:
+
 ```
 venv\Scripts\activate
 ```
-on Linux and macos:
+- On Linux and macos:
+
 ```
 source venv/bin/activate
 ```
 
-Run the following command:
+* Run the following command:
 ```
 pip install -e .
 ```
