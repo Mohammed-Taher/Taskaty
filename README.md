@@ -24,7 +24,7 @@ If you are on Ubuntu, make sure that `python3-venv` is installed:
 sudo apt install python3-venv
 ```  
 
-* Ativate the virtual environment:
+* Activate the virtual environment:
 
 - On Windows:
 
@@ -53,15 +53,15 @@ To add a task use the option `add`.
 taskaty add "Add search bar compoent to the UI"
 ```
 
-`add` option has the following optional arguments. :
+`add` option has the following optional arguments:
 
-`-d, --description`: add a short description to the task.
+* `-d, --description`: add a short description to the task.
 
-`-s, --start_date`: determine the starting date of the task. Not using this argument or leaving it empty will assign the date of the current day as the starting day. Use isoformat string "YYYY-MM-DD".
+* `-s, --start_date`: determine the starting date of the task. Not using this argument or leaving it empty will assign the date of the current day as the starting day. Use isoformat string "YYYY-MM-DD".
 
-`-e, --end_date`: determine the ending date of the task. Use isoformat string "YYYY-MM-DD".
+* `-e, --end_date`: determine the ending date of the task. Use isoformat string "YYYY-MM-DD".
 
-`--done`: Determine whether the task is checked as done or not. ("False" or "True").
+* `--done`: Determine whether the task is checked as done or not. ("False" or "True").
 
 ### List tasks
 
@@ -71,13 +71,13 @@ To list the unfinished tasks use:
 taskaty list
 ```
 
-`list` option has the following optional argumen:
+`list` option has the following optional argument:
 
-`-a, --all`: List all the tasks.
+* `-a, --all`: List all the tasks.
 
 ### Check a task
 
-To check a task as finished use:
+To finish a task use:
 
 ```
 taskaty check -t <task_number>
@@ -91,7 +91,7 @@ To remove a task use:
 taskaty remove -t <task_number>
 ```
 
-If task number is not specified, last task would be removed.
+If you don't specify the task number to be deleted, last task is removed.
 
 ### Remove all tasks
 
