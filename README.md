@@ -12,6 +12,18 @@ A simple command line interface app for task management.
 python -m venv venv
 ```
 
+Or
+
+```
+python3 -m venv venv
+```
+
+If you are on Ubuntu, make sure that `python3-venv` is installed:
+
+```
+sudo apt install python3-venv
+```  
+
 * Ativate the virtual environment:
 
 - On Windows:
@@ -25,7 +37,7 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-* Run the following command:
+* Run the following command to install the app:
 ```
 pip install -e .
 ```
