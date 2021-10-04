@@ -9,6 +9,7 @@ def main():
     controller = TaskController('tasks.txt')
 
     parser = argparse.ArgumentParser(description = 'Simple CLI Task manager', formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.set_defaults(func=None)
     subparsers = parser.add_subparsers()
 
     add_task = subparsers.add_parser('add', help='Add the given task')
@@ -36,6 +37,8 @@ def main():
     reset.set_defaults(func=controller.reset)
 
     args = parser.parse_args()
+    if not args.func:
+        return
     args.func(args)
 
 
